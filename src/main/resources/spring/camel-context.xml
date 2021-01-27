@@ -7,8 +7,8 @@
 
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
         <route id="simple-route">
-            <from id="route-timer" uri="timer://foo?period=1000"/>
-            <setBody id="route-setBody"><simple>Hello World from camel-context.xml</simple></setBody>
+            <from id="route-timer" uri="timer://foo?period=2000"/>
+            <setBody id="route-setBody"><simple>Hello There !</simple></setBody>
             <log id="route-log" message=">>> ${body}"/>
         </route>
     </camelContext>
